@@ -1,0 +1,1 @@
+CREATE ROLE facturacion LOGIN PASSWORD '1234';
