@@ -10,7 +10,7 @@ import { ErrorHttp, esquemas, validar } from "./validacion.js";
 // ---------- Configuración ----------
 
 /** Dirección de la nube de cuentas. Para desarrollo: LIQ_NUBE_URL=http://localhost:3100 */
-const NUBE_URL = (process.env.LIQ_NUBE_URL ?? "https://CAMBIAR-por-la-direccion-de-la-nube").replace(/\/+$/, "");
+const NUBE_URL = (process.env.LIQ_NUBE_URL ?? "liquidacion-nube-production.up.railway.app").replace(/\/+$/, "");
 const DEV_URL = app.isPackaged ? undefined : process.env.LIQ_DEV_URL; // servidor de Vite en `npm run dev`
 
 // La contraseña viaja a la nube: en la app instalada solo se permite HTTPS.
